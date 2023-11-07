@@ -4,7 +4,7 @@
 
 ```
 nix shell nixpkgs#qmk
-qmk setup zsa/qmk_firmware -b firmware22
+qmk setup
 
 ln -s $(pwd) /home/fedora/qmk_firmware/keyboards/moonlander/keymaps/moonwalker
 ```
