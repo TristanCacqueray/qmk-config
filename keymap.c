@@ -2,6 +2,8 @@
 #include "version.h"
 #include "keymap_us_international.h"
 
+#include "features/achordion.h"
+
 #define KC_MAC_UNDO LGUI(KC_Z)
 #define KC_MAC_CUT LGUI(KC_X)
 #define KC_MAC_COPY LGUI(KC_C)
@@ -24,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     TG(3),          KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_GRAVE,
-    KC_TAB,         KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_H,           KC_J,           KC_K,           KC_L,           KC_SEMICOLON,      KC_QUOTE,
+    KC_TAB,         KC_A,           KC_S,           LCTL_T(KC_D),           LALT_T(KC_F),           KC_G,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_H,           RALT_T(KC_J),           RCTL_T(KC_K),           KC_L,           KC_SEMICOLON,      KC_QUOTE,
     KC_ESCAPE,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_ENTER,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_LGUI,        KC_LEFT_SHIFT,      TG(4),                                                                                                          KC_TRANSPARENT, MO(1),          KC_MINUS,       KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     KC_BACKSPACE,      KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_SPACE
@@ -78,6 +80,10 @@ combo_t key_combos[COMBO_COUNT] = {
 
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-
+  if (!process_achordion(keycode, record)) { return false; }
   return true;
+}
+
+void matrix_scan_user(void) {
+  achordion_task();
 }

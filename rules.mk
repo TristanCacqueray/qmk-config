@@ -6,3 +6,6 @@ AUDIO_ENABLE = no
 SPACE_CADET_ENABLE = no
 COMBO_ENABLE = yes
 SRC = matrix.c
+SRC += features/achordion.c
+RGBLIGHT_ENABLE = no
+BACKLIGHT_ENABLE = no

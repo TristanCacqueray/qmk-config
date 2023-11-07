@@ -13,3 +13,6 @@
 
 #define LAYER_STATE_8BIT
 #define COMBO_COUNT 4
+
+#define TAPPING_TERM 200
+#define PERMISSIVE_HOLD
