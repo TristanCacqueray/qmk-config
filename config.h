@@ -16,3 +16,6 @@
 
 #define TAPPING_TERM 200
 #define PERMISSIVE_HOLD
+
+// toggle after one tap, like the default tap/toggle on oryx
+#define TAPPING_TOGGLE 1
