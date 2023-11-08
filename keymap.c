@@ -47,14 +47,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_FL] = LAYOUT_moonlander(
     _______,        _______,        _______,        _______,        _______,        _______,        _______,                 _______, _______, _______, _______, _______, _______, _______,
     KC_PSCR,        KC_EXLM,        KC_AT,          KC_UP,          KC_LCBR,        KC_RCBR,        _______,                 _______, KC_PGUP,        KC_7,           KC_8,           KC_9,           KC_ASTR,           KC_PERC,
-    KC_NO,          KC_HASH,        KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_DLR,         _______,                 _______, KC_PGDN,        KC_4,           KC_5,           KC_6,           KC_KP_PLUS,        KC_CIRC,
+    KC_INSERT,      KC_HASH,        KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_DLR,         _______,                 _______, KC_PGDN,        KC_4,           KC_5,           KC_6,           KC_KP_PLUS,        KC_CIRC,
     TT(2),          KC_LBRC,        KC_RBRC,        KC_LPRN,        KC_RPRN,        KC_AMPR,                                             KC_0,        KC_1,           KC_2,           KC_3,           KC_BACKSLASH,      KC_EQUAL,
     _______,        _______,        _______,        _______,        _______,        _______,                                          _______,        _______,        KC_DOT,         _______,        _______,           _______,
     _______,        _______, _______,                 _______, _______, _______
   ),
   [_CL] = LAYOUT_moonlander(
     _______,        _______, _______, _______, _______, _______, _______,                                 _______, _______, _______, _______, _______, _______, _______,
-    _______,        KC_INSERT,      KC_HOME,        KC_UP,          KC_END,         KC_PGUP,        _______,                 _______, KC_UP,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         _______,
+    _______,        KC_NO,          KC_HOME,        KC_UP,          KC_END,         KC_PGUP,        _______,                 _______, KC_UP,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         _______,
     _______,        KC_DELETE,      KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_PGDN,      _______,                   _______, KC_DOWN,        KC_F4,          KC_F5,          KC_F6,          KC_F11,         _______,
     _______,        KC_VOL_DN,      KC_VOL_UP,      KC_BR_DOWN,     KC_BR_UP,       QK_BOOT,                                          KC_NO,          KC_F1,          KC_F2,          KC_F3,          KC_F12,         _______,
     _______,        _______, _______, _______, _______, _______,                                                                             _______, TO(0),          KC_NO,          KC_NO,          _______, _______,
