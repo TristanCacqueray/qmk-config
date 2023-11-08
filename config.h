@@ -11,8 +11,11 @@
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX 30
 
+// reduce firmware size by limitting the number of layer to 8
 #define LAYER_STATE_8BIT
-#define COMBO_COUNT 4
+
+// disable sound
+#define NO_MUSIC_MODE
 
 #define TAPPING_TERM 200
 #define PERMISSIVE_HOLD

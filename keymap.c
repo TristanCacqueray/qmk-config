@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_FL] = LAYOUT_moonlander(
     _______,        _______,        _______,        _______,        _______,        _______,        _______,                 _______, _______, _______, _______, _______, _______, _______,
-    KC_INSERT,      KC_EXLM,        KC_AT,          KC_UP,          KC_LCBR,        KC_RCBR,        _______,                 _______, KC_PGUP,        KC_7,           KC_8,           KC_9,           KC_ASTR,           KC_PERC,
+    KC_PSCR,        KC_EXLM,        KC_AT,          KC_UP,          KC_LCBR,        KC_RCBR,        _______,                 _______, KC_PGUP,        KC_7,           KC_8,           KC_9,           KC_ASTR,           KC_PERC,
     KC_NO,          KC_HASH,        KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_DLR,         _______,                 _______, KC_PGDN,        KC_4,           KC_5,           KC_6,           KC_KP_PLUS,        KC_CIRC,
     TT(2),          KC_LBRC,        KC_RBRC,        KC_LPRN,        KC_RPRN,        KC_AMPR,                                             KC_0,        KC_1,           KC_2,           KC_3,           KC_BACKSLASH,      KC_EQUAL,
     _______,        _______,        _______,        _______,        _______,        _______,                                          _______,        _______,        KC_DOT,         _______,        _______,           _______,
@@ -77,20 +77,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______,                 _______, _______, _______
   ),
 };
-
-const uint16_t PROGMEM combo0[] = { KC_F, KC_S, COMBO_END};
-const uint16_t PROGMEM combo1[] = { KC_F, KC_D, COMBO_END};
-const uint16_t PROGMEM combo2[] = { KC_J, KC_L, COMBO_END};
-const uint16_t PROGMEM combo3[] = { KC_J, KC_K, COMBO_END};
-
-combo_t key_combos[COMBO_COUNT] = {
-    COMBO(combo0, KC_LEFT_ALT),
-    COMBO(combo1, KC_LEFT_CTRL),
-    COMBO(combo2, KC_RIGHT_ALT),
-    COMBO(combo3, KC_RIGHT_CTRL),
-};
-
-
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (!process_achordion(keycode, record)) { return false; }

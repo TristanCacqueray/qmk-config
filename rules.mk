@@ -3,8 +3,9 @@
 CONSOLE_ENABLE = no
 COMMAND_ENABLE = no
 AUDIO_ENABLE = no
+MUSIC_ENABLE = no
 SPACE_CADET_ENABLE = no
-COMBO_ENABLE = yes
+COMBO_ENABLE = no
 SRC = matrix.c
 SRC += features/achordion.c
 RGBLIGHT_ENABLE = no
