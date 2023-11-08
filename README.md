@@ -1,5 +1,9 @@
 # qmk config with Achordion
 
+![cornec](./cornec.png)
+
+> generated with http://www.keyboard-layout-editor.com
+
 ## setup
 
 ```
