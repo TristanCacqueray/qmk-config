@@ -35,6 +35,17 @@ enum layer_names {
 #define KC_BR_DOWN  KC_BRIGHTNESS_DOWN
 #define KC_BR_UP    KC_BRIGHTNESS_UP
 
+#include "features/custom_shift_keys.h"
+
+const custom_shift_key_t custom_shift_keys[] = {
+  {LCTL_T(KC_D), LSFT(KC_D)}, // Shift d is D
+  {LALT_T(KC_F), LSFT(KC_F)}, // Shift f is F
+  {RALT_T(KC_J), LSFT(KC_J)}, // Shift j is J
+  {RCTL_T(KC_K), LSFT(KC_K)}, // Shift k is K
+};
+uint8_t NUM_CUSTOM_SHIFT_KEYS =
+    sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BL] = LAYOUT_moonlander(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                   KC_NO,     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
@@ -79,6 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  if (!process_custom_shift_keys(keycode, record)) { return false; }
   if (!process_achordion(keycode, record)) { return false; }
   return true;
 }

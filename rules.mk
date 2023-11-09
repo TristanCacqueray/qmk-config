@@ -8,5 +8,6 @@ SPACE_CADET_ENABLE = no
 COMBO_ENABLE = no
 SRC = matrix.c
 SRC += features/achordion.c
+SRC += features/custom_shift_keys.c
 RGBLIGHT_ENABLE = no
 BACKLIGHT_ENABLE = no
