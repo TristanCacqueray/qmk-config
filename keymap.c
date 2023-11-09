@@ -42,6 +42,8 @@ const custom_shift_key_t custom_shift_keys[] = {
   {LALT_T(KC_F), LSFT(KC_F)}, // Shift f is F
   {RALT_T(KC_J), LSFT(KC_J)}, // Shift j is J
   {RCTL_T(KC_K), LSFT(KC_K)}, // Shift k is K
+  {LT(_FL, KC_V), LSFT(KC_V)},
+  {LT(_FL, KC_M), LSFT(KC_M)},
 };
 uint8_t NUM_CUSTOM_SHIFT_KEYS =
     sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
@@ -51,15 +53,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                   KC_NO,     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     TG(_ML),        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_NO,                   KC_NO,     KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_GRAVE,
     KC_TAB,         KC_A,           KC_S,           LCTL_T(KC_D),   LALT_T(KC_F),   KC_G,           KC_NO,                   KC_NO,     KC_H,           RALT_T(KC_J),   RCTL_T(KC_K),   KC_L,           KC_SEMICOLON,   KC_QUOTE,
-    KC_ESCAPE,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                               KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_ENTER,
-    KC_NO,          KC_NO,          KC_NO,          KC_LGUI,        KC_LEFT_SHIFT,                  TG(_COLE),               KC_NO,                    MO(_FL),        KC_MINUS,        KC_NO,          KC_NO,          KC_NO,
+    KC_ESCAPE,      KC_Z,           KC_X,           KC_C,           LT(_FL, KC_V),  KC_B,                                               KC_N,           LT(_FL, KC_M),  KC_COMMA,       KC_DOT,         KC_SLASH,       KC_ENTER,
+    KC_NO,          KC_NO,          KC_NO,          KC_LGUI,        KC_LEFT_SHIFT,                  TG(_COLE),               KC_NO,                    TT(_CL),        KC_MINUS,        KC_NO,          KC_NO,          KC_NO,
                                                                                     KC_BACKSPACE,       KC_NO,KC_NO,KC_NO,KC_NO,        KC_SPACE
   ),
   [_FL] = LAYOUT_moonlander(
     _______,        _______,        _______,        _______,        _______,        _______,        _______,                 _______, _______, _______, _______, _______, _______, _______,
     KC_PSCR,        KC_EXLM,        KC_AT,          KC_UP,          KC_LCBR,        KC_RCBR,        _______,                 _______, KC_PGUP,        KC_7,           KC_8,           KC_9,           KC_ASTR,           KC_PERC,
     KC_INSERT,      KC_HASH,        KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_DLR,         _______,                 _______, KC_PGDN,        KC_4,           KC_5,           KC_6,           KC_KP_PLUS,        KC_CIRC,
-    TT(2),          KC_LBRC,        KC_RBRC,        KC_LPRN,        KC_RPRN,        KC_AMPR,                                             KC_0,        KC_1,           KC_2,           KC_3,           KC_BACKSLASH,      KC_EQUAL,
+    _______,        KC_LBRC,        KC_RBRC,        KC_LPRN,        KC_RPRN,        KC_AMPR,                                             KC_0,        KC_1,           KC_2,           KC_3,           KC_BACKSLASH,      KC_EQUAL,
     _______,        _______,        _______,        _______,        _______,        _______,                                          _______,        _______,        KC_DOT,         _______,        _______,           _______,
     _______,        _______, _______,                 _______, _______, _______
   ),
