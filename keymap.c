@@ -83,6 +83,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
+bool achordion_chord(uint16_t tap_hold_keycode,  keyrecord_t* tap_hold_record,
+                     uint16_t other_keycode,     keyrecord_t* other_record) {
+  // Exceptionally consider the following chords as tap.
+  switch (tap_hold_keycode) {
+    case LALT_T(KC_F):  // alt + space
+      if (other_keycode == KC_SPACE) { return false; }
+      break;
+  }
+
+  // Otherwise, follow the opposite hands rule.
+  return achordion_opposite_hands(tap_hold_record, other_record);
+}
+
 void matrix_scan_user(void) {
   achordion_task();
 }
