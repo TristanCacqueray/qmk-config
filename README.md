@@ -22,3 +22,5 @@ qmk setup
 ln -s $(pwd) /home/fedora/qmk_firmware/keyboards/moonlander/keymaps/moonwalker
 qmk compile -kb moonlander -km moonwalker
 ```
+
+Don't forget to apply https://github.com/qmk/qmk_firmware/pull/19405 to ~/qmk_firmware.

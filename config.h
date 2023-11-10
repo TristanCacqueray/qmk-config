@@ -24,3 +24,7 @@
 // Unfortunately, some applications drop or misorder fast key events. This is a
 // partial fix to slow down the rate at which macros are sent.
 #define TAP_CODE_DELAY 12
+
+// This uses https://github.com/qmk/qmk_firmware/pull/19405 to fix an issue
+// for `m`-`v` and `m`-`a` to output `)` and `#` instead of `0` and `3`.
+#define KEYBOARD_MOD_PACKET_DELAY 20
