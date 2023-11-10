@@ -53,6 +53,10 @@
 
 #include "quantum.h"
 
+#ifndef ACHORDION_TYPING_STREAK_TIMEOUT
+# define ACHORDION_TYPING_STREAK_TIMEOUT 0    /* disabled */
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif

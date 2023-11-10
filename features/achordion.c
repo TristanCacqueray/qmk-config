@@ -21,6 +21,7 @@
  */
 
 #include "achordion.h"
+#include "timer.h"
 
 #if !defined(IS_QK_MOD_TAP)
 // Attempt to detect out-of-date QMK installation, which would fail with
@@ -35,6 +36,13 @@ static uint16_t tap_hold_keycode = KC_NO;
 static uint16_t hold_timer = 0;
 // Eagerly applied mods, if any.
 static uint8_t eager_mods = 0;
+
+#if ACHORDION_TYPING_STREAK_TIMEOUT > 0
+// Timer for typing streak
+static uint16_t last_time = 0;
+#else
+#define is_streak false
+#endif
 
 // Achordion's current state.
 enum {
@@ -116,6 +124,7 @@ bool process_achordion(uint16_t keycode, keyrecord_t* record) {
       }
     }
 
+    last_time = record->event.time;
     return true;  // Otherwise, continue with default handling.
   }
 
@@ -140,6 +149,10 @@ bool process_achordion(uint16_t keycode, keyrecord_t* record) {
 
   if (achordion_state == STATE_UNSETTLED && record->event.pressed) {
     // Press event occurred on a key other than the active tap-hold key.
+#if ACHORDION_TYPING_STREAK_TIMEOUT > 0
+    const bool is_streak = TIMER_DIFF_16(record->event.time, last_time) < ACHORDION_TYPING_STREAK_TIMEOUT;
+    last_time = record->event.time;
+#endif
 
     // If the other key is *also* a tap-hold key and considered by QMK to be
     // held, then we settle the active key as held. This way, things like
@@ -151,8 +164,8 @@ bool process_achordion(uint16_t keycode, keyrecord_t* record) {
     // events back into the handling pipeline so that QMK features and other
     // user code can see them. This is done by calling `process_record()`, which
     // in turn calls most handlers including `process_record_user()`.
-    if (!is_key_event || keycode == KC_LEFT_SHIFT || (is_tap_hold && record->tap.count == 0) ||
-        achordion_chord(tap_hold_keycode, &tap_hold_record, keycode, record)) {
+    if (!is_streak && (!is_key_event || keycode == KC_LEFT_SHIFT || (is_tap_hold && record->tap.count == 0) ||
+        achordion_chord(tap_hold_keycode, &tap_hold_record, keycode, record))) {
       dprintln("Achordion: Plumbing hold press.");
       settle_as_hold();
     } else {
@@ -179,6 +192,7 @@ bool process_achordion(uint16_t keycode, keyrecord_t* record) {
     return false;  // Block the original event.
   }
 
+  last_time = record->event.time;
   return true;
 }
 

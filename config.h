@@ -13,7 +13,7 @@
 #define NO_MUSIC_MODE
 
 // tapping adjustment
-#define TAPPING_TERM 190
+#define TAPPING_TERM 200
 #define PERMISSIVE_HOLD
 // #define TAPPING_TERM_PER_KEY
 // #define QUICK_TAP_TERM_PER_KEY
@@ -28,3 +28,6 @@
 // This uses https://github.com/qmk/qmk_firmware/pull/19405 to fix an issue
 // for `m`-`v` and `m`-`a` to output `)` and `#` instead of `0` and `3`.
 #define KEYBOARD_MOD_PACKET_DELAY 20
+
+// Inspired by https://sunaku.github.io/home-row-mods.html#typing-streaks
+#define ACHORDION_TYPING_STREAK_TIMEOUT 100
