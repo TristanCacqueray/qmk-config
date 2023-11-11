@@ -17,10 +17,9 @@
 Run the following commands to build the firmware:
 
 ```
-nix shell nixpkgs#qmk
-qmk setup
-ln -s $(pwd) /home/fedora/qmk_firmware/keyboards/moonlander/keymaps/moonwalker
-qmk compile -kb moonlander -km moonwalker
+nix develop --command qmk setup
+ln -s $(pwd) ~/qmk_firmware/keyboards/moonlander/keymaps/moonwalker
+nix run
 ```
 
 Don't forget to apply https://github.com/qmk/qmk_firmware/pull/19405 to ~/qmk_firmware.
