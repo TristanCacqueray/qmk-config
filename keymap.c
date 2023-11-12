@@ -9,7 +9,7 @@ enum layer_names {
     _FL,
     _CL,
     _ML,
-    _COLE,
+    _SETTINGS,
 };
 
 #define KC_VOL_DN   KC_KB_VOLUME_DOWN
@@ -52,8 +52,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_CL] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-    _______,        xxxxxxxx,       KC_HOME,        KC_UP,          KC_END,         KC_PGUP,        _______,                 _______,        KC_PGUP,        KC_F7,          KC_F8,          KC_F9,          KC_F10,         xxxxxxxx,
-    _______,        KC_DELETE,      KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_PGDN,      _______,                   _______,        KC_PGDN,        KC_F4,          KC_F5,          KC_F6,          KC_F11,         xxxxxxxx,
+    _______,        xxxxxxxx,       KC_HOME,        KC_UP,          KC_END,         KC_PGUP,        xxxxxxxx,                xxxxxxxx,       KC_PGUP,        KC_F7,          KC_F8,          KC_F9,          KC_F10,         xxxxxxxx,
+    _______,        KC_DELETE,      KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_PGDN,        xxxxxxxx,                xxxxxxxx,       KC_PGDN,        KC_F4,          KC_F5,          KC_F6,          KC_F11,         xxxxxxxx,
     _______,        KC_VOL_DN,      KC_VOL_UP,      KC_BR_DOWN,     KC_BR_UP,       QK_BOOT,                                                 xxxxxxxx,       KC_F1,          KC_F2,          KC_F3,          KC_F12,         KC_ENTER,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
@@ -61,8 +61,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_ML] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+    TO(_BL),        xxxxxxxx,       KC_MS_BTN1,     KC_MS_UP,       KC_MS_BTN2,     KC_MS_WH_UP,    xxxxxxxx,                xxxxxxxx,       KC_MS_WH_UP,    KC_MS_BTN1,     KC_MS_UP,       KC_MS_BTN2,     xxxxxxxx,       xxxxxxxx,
+    TO(_SETTINGS),  xxxxxxxx,       KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_MS_WH_DOWN,  xxxxxxxx,                xxxxxxxx,       KC_MS_WH_DOWN,  KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_MS_BTN3,                                              KC_MS_BTN3,     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_ENTER,
+    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+                                                                                    _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
+  ),
+
+  [_SETTINGS] = LAYOUT_moonlander(
+    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
     TO(_BL),        RGB_TOG,        xxxxxxxx,       RGB_HUI,        RGB_SAI,        RGB_VAI,        xxxxxxxx,                xxxxxxxx,       KC_MS_WH_UP,    KC_MS_BTN1,     KC_MS_UP,       KC_MS_BTN2,     xxxxxxxx,       xxxxxxxx,
-    xxxxxxxx,       LED_LEVEL,      RGB_MOD,        RGB_HUD,        RGB_SAD,        RGB_VAD,        xxxxxxxx,                xxxxxxxx,       KC_MS_WH_DOWN,  KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    xxxxxxxx,       KC_NO,
+    TO(_BL),        LED_LEVEL,      RGB_MOD,        RGB_HUD,        RGB_SAD,        RGB_VAD,        xxxxxxxx,                xxxxxxxx,       KC_MS_WH_DOWN,  KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    xxxxxxxx,       KC_NO,
     xxxxxxxx,       xxxxxxxx,       RGB_SPD,        RGB_SPI,        xxxxxxxx,       xxxxxxxx,                                                KC_MS_BTN3,     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
