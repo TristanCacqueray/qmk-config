@@ -52,9 +52,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_CL] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-    _______,        xxxxxxxx,       KC_HOME,        KC_UP,          KC_END,         KC_PGUP,        xxxxxxxx,                xxxxxxxx,       KC_PGUP,        KC_F7,          KC_F8,          KC_F9,          KC_F10,         xxxxxxxx,
-    _______,        KC_DELETE,      KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_PGDN,        xxxxxxxx,                xxxxxxxx,       KC_PGDN,        KC_F4,          KC_F5,          KC_F6,          KC_F11,         xxxxxxxx,
-    _______,        KC_VOL_DN,      KC_VOL_UP,      KC_BR_DOWN,     KC_BR_UP,       QK_BOOT,                                                 xxxxxxxx,       KC_F1,          KC_F2,          KC_F3,          KC_F12,         KC_ENTER,
+    _______,        xxxxxxxx,       KC_HOME,        KC_UP,          KC_END,         KC_PGUP,        xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       KC_F7,          KC_F8,          KC_F9,          KC_F10,         xxxxxxxx,
+    _______,        KC_DELETE,      KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_PGDN,        xxxxxxxx,                xxxxxxxx,       KC_PGUP,        KC_F4,          KC_F5,          KC_F6,          KC_F11,         xxxxxxxx,
+    _______,        KC_VOL_DN,      KC_VOL_UP,      KC_BR_DOWN,     KC_BR_UP,       QK_BOOT,                                                 KC_PGDN,        KC_F1,          KC_F2,          KC_F3,          KC_F12,         KC_ENTER,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
   ),
