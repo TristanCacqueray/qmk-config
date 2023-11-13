@@ -39,7 +39,7 @@ static uint8_t eager_mods = 0;
 
 #if ACHORDION_TYPING_STREAK_TIMEOUT > 0
 // Timer for typing streak
-static uint16_t last_time = 0;
+static uint16_t idle_timer;
 #else
 #define is_streak false
 #endif
@@ -124,7 +124,7 @@ bool process_achordion(uint16_t keycode, keyrecord_t* record) {
       }
     }
 
-    last_time = record->event.time;
+    idle_timer = timer_read();
     return true;  // Otherwise, continue with default handling.
   }
 
@@ -150,8 +150,8 @@ bool process_achordion(uint16_t keycode, keyrecord_t* record) {
   if (achordion_state == STATE_UNSETTLED && record->event.pressed) {
     // Press event occurred on a key other than the active tap-hold key.
 #if ACHORDION_TYPING_STREAK_TIMEOUT > 0
-    const bool is_streak = TIMER_DIFF_16(record->event.time, last_time) < ACHORDION_TYPING_STREAK_TIMEOUT;
-    last_time = record->event.time;
+    const bool is_streak = timer_elapsed(idle_timer) < ACHORDION_TYPING_STREAK_TIMEOUT;
+    idle_timer = timer_read();
 #endif
 
     // If the other key is *also* a tap-hold key and considered by QMK to be
@@ -192,7 +192,7 @@ bool process_achordion(uint16_t keycode, keyrecord_t* record) {
     return false;  // Block the original event.
   }
 
-  last_time = record->event.time;
+  idle_timer = timer_read();
   return true;
 }
 
@@ -201,6 +201,7 @@ void achordion_task(void) {
       timer_expired(timer_read(), hold_timer)) {
     dprintln("Achordion: Timeout. Plumbing hold press.");
     settle_as_hold();  // Timeout expired, settle the key as held.
+    idle_timer = timer_read();
   }
 }
 
