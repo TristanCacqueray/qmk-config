@@ -79,6 +79,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+#ifdef CONSOLE_ENABLE
+    uprintf("KL: kc: 0x%04X, col: %2u, row: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
+#endif
   if (!process_custom_shift_keys(keycode, record)) { return false; }
   if (!process_achordion(keycode, record)) { return false; }
   return true;
@@ -99,4 +102,9 @@ bool achordion_chord(uint16_t tap_hold_keycode,  keyrecord_t* tap_hold_record,
 
 void matrix_scan_user(void) {
   achordion_task();
+}
+
+bool achordion_eager_mod(uint8_t mod) {
+  // disable eager mod
+  return false;
 }
