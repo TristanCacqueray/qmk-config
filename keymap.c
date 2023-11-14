@@ -43,8 +43,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_FL] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-    KC_PSCR,        KC_EXLM,        KC_AT,          KC_UP,          KC_LCBR,        KC_RCBR,        xxxxxxxx,                xxxxxxxx,       KC_QUOTE,       KC_7,           KC_8,           KC_9,           KC_ASTR,        KC_PERC,
-    KC_INSERT,      KC_HASH,        KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_DLR,         xxxxxxxx,                xxxxxxxx,       KC_MINUS,       KC_4,           KC_5,           KC_6,           KC_KP_PLUS,     KC_CIRC,
+    xxxxxxxx,       KC_EXLM,        KC_AT,          KC_PERC,        KC_LCBR,        KC_RCBR,        xxxxxxxx,                xxxxxxxx,       LSFT(KC_QUOTE), KC_7,           KC_8,           KC_9,           KC_ASTR,        xxxxxxxx,
+    xxxxxxxx,       KC_HASH,        KC_CIRC,        KC_MINUS,       LSFT(KC_MINUS), KC_DLR,         xxxxxxxx,                xxxxxxxx,       KC_QUOTE,       KC_4,           KC_5,           KC_6,           KC_KP_PLUS,     xxxxxxxx,
     _______,        KC_LBRC,        KC_RBRC,        KC_LPRN,        KC_RPRN,        KC_AMPR,                                                 KC_EQUAL,       KC_1,           KC_2,           KC_3,           KC_BACKSLASH,   xxxxxxxx,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       KC_0,           KC_DOT,         xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
@@ -52,11 +52,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_CL] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-    _______,        xxxxxxxx,       KC_HOME,        KC_UP,          KC_END,         KC_PGUP,        xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       KC_F7,          KC_F8,          KC_F9,          KC_F10,         xxxxxxxx,
+    _______,        KC_INSERT,      KC_HOME,        KC_UP,          KC_END,         KC_PGUP,        xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       KC_F7,          KC_F8,          KC_F9,          KC_F10,         xxxxxxxx,
     _______,        KC_DELETE,      KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_PGDN,        xxxxxxxx,                xxxxxxxx,       KC_PGUP,        KC_F4,          KC_F5,          KC_F6,          KC_F11,         xxxxxxxx,
     _______,        KC_VOL_DN,      KC_VOL_UP,      KC_BR_DOWN,     KC_BR_UP,       QK_BOOT,                                                 KC_PGDN,        KC_F1,          KC_F2,          KC_F3,          KC_F12,         KC_ENTER,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-                                                                                    _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
+                                                                                    _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          KC_PSCR
   ),
 
   [_ML] = LAYOUT_moonlander(
