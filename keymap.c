@@ -28,6 +28,7 @@ enum custom_keycodes {
 
   M_CEDIL,
   M_OE,
+  M_EURO,
 
   M_DOTDOT,
 };
@@ -103,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_UNICODE] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
     xxxxxxxx,       xxxxxxxx,       M_EGRAV,        M_ECUTE,        M_ECIRC,        xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       M_UCUTE,        M_ICIRC,        M_OE,           xxxxxxxx,       xxxxxxxx,
-    xxxxxxxx,       M_AGRAV,        M_ACIRC,        M_ETREMA,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       M_UTREMA,       M_ITREMA,       M_LAMBDA,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       M_AGRAV,        M_ACIRC,        M_ETREMA,       xxxxxxxx,       M_EURO,         xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       M_UTREMA,       M_ITREMA,       M_LAMBDA,       xxxxxxxx,       xxxxxxxx,
     xxxxxxxx,       M_ACIRC,        xxxxxxxx,       M_CEDIL,        xxxxxxxx,       xxxxxxxx,                                                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_DOTDOT,       xxxxxxxx,       xxxxxxxx,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
@@ -150,6 +151,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case M_CEDIL:  send_unicode_string(is_shifted ? "Ç" : "ç"); break;
     case M_OE:     send_unicode_string(is_shifted ? "Œ" : "œ"); break;
     case M_DOTDOT: send_unicode_string("…"); break;
+    case M_EURO:   send_unicode_string("€"); break;
 
     }
   }
