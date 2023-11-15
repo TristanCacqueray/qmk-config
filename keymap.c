@@ -37,10 +37,10 @@ uint8_t NUM_CUSTOM_SHIFT_KEYS =
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BL] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-    TG(_ML),        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           xxxxxxxx,                xxxxxxxx,       KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_GRAVE,
-    KC_TAB,         HOME_PL,        LT(_FL, KC_S),  LCTL_T(KC_D),   LALT_T(KC_F),   KC_G,           xxxxxxxx,                xxxxxxxx,       KC_H,           RALT_T(KC_J),   RCTL_T(KC_K),   LT(_FL, KC_L),  HOME_PR,        xxxxxxxx,
+    TG(_ML),        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           xxxxxxxx,                xxxxxxxx,       KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           xxxxxxxx,
+    KC_TAB,         HOME_PL,        LT(_FL, KC_S),  LCTL_T(KC_D),   LALT_T(KC_F),   KC_G,           xxxxxxxx,                xxxxxxxx,       KC_H,           RALT_T(KC_J),   RCTL_T(KC_K),   LT(_FL, KC_L),  HOME_PR,        KC_GRAVE,
     KC_ESCAPE,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                    KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_ENTER,
-    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_LEFT_SHIFT,                  xxxxxxxx,                xxxxxxxx,                       TT(_CL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_LGUI,        KC_LEFT_SHIFT,                  xxxxxxxx,                xxxxxxxx,                       TT(_CL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     KC_BSPC,            KC_NO,KC_NO,   KC_NO,KC_NO,          KC_SPACE
   ),
 
