@@ -34,3 +34,9 @@
 
 // https://github.com/getreuer/qmk-keymap/discussions/47
 #define ACHORDION_CHORDING_DISABLED
+
+// leader
+// #define LEADER_NO_TIMEOUT
+
+// unicode
+#define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX

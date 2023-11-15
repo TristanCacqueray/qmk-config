@@ -4,12 +4,27 @@
 
 #include "features/achordion.h"
 
-enum layer_names {
+enum layer {
     _BL,
     _FL,
     _CL,
     _ML,
     _SETTINGS,
+    _UNICODE,
+};
+
+enum custom_keycodes {
+  M_LAMBDA = SAFE_RANGE,
+  M_ECUTE,
+  M_EGRAV,
+  M_ECIRC,
+  M_AGRAV,
+  M_ACIRC,
+
+  M_CEDIL,
+  M_OE,
+
+  M_DOTDOT,
 };
 
 #define KC_VOL_DN   KC_KB_VOLUME_DOWN
@@ -37,7 +52,7 @@ uint8_t NUM_CUSTOM_SHIFT_KEYS =
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BL] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-    TG(_ML),        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           xxxxxxxx,                xxxxxxxx,       KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           xxxxxxxx,
+    TG(_ML),        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           xxxxxxxx,                xxxxxxxx,       KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           OSL(_UNICODE),
     KC_TAB,         HOME_PL,        LT(_FL, KC_S),  LCTL_T(KC_D),   LALT_T(KC_F),   KC_G,           xxxxxxxx,                xxxxxxxx,       KC_H,           RALT_T(KC_J),   RCTL_T(KC_K),   LT(_FL, KC_L),  HOME_PR,        KC_GRAVE,
     KC_ESCAPE,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                    KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_ENTER,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_LGUI,        KC_LEFT_SHIFT,                  xxxxxxxx,                xxxxxxxx,                       TT(_CL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
@@ -79,6 +94,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
   ),
+
+  [_UNICODE] = LAYOUT_moonlander(
+    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       xxxxxxxx,       M_EGRAV,        M_ECUTE,        M_ECIRC,        xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_OE,           xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       M_AGRAV,        M_ACIRC,        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_LAMBDA,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_CEDIL,        xxxxxxxx,       xxxxxxxx,                                                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_DOTDOT,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+                                                                                    _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
+  ),
 };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t* record) {
@@ -99,6 +123,25 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #endif
   if (!process_custom_shift_keys(keycode, record)) { return false; }
   if (!process_achordion(keycode, record)) { return false; }
+
+  const bool is_shifted = get_mods() & MOD_MASK_SHIFT;
+  if (record->event.pressed) {
+    switch (keycode) {
+    case M_LAMBDA: send_unicode_string(is_shifted ? "Λ" : "λ"); break;
+
+    case M_ECUTE:  send_unicode_string(is_shifted ? "É" : "é"); break;
+    case M_EGRAV:  send_unicode_string(is_shifted ? "È" : "è"); break;
+    case M_ECIRC:  send_unicode_string(is_shifted ? "Ê" : "ê"); break;
+
+    case M_AGRAV:  send_unicode_string(is_shifted ? "À" : "à"); break;
+    case M_ACIRC:  send_unicode_string(is_shifted ? "Â" : "â"); break;
+
+    case M_CEDIL:  send_unicode_string(is_shifted ? "Ç" : "ç"); break;
+    case M_OE:     send_unicode_string(is_shifted ? "Œ" : "œ"); break;
+    case M_DOTDOT: send_unicode_string("…"); break;
+
+    }
+  }
   return true;
 }
 

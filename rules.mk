@@ -10,5 +10,10 @@ SRC += features/achordion.c
 SRC += features/custom_shift_keys.c
 RGBLIGHT_ENABLE = no
 BACKLIGHT_ENABLE = no
+# LEADER_ENABLE = yes
+
+# unicode
+UNICODE_COMMON = yes
+UNICODE_ENABLE = yes
 
 CONSOLE_ENABLE = no
