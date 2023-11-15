@@ -31,3 +31,6 @@
 
 // Inspired by https://sunaku.github.io/home-row-mods.html#typing-streaks
 #define ACHORDION_TYPING_STREAK_TIMEOUT 100
+
+// https://github.com/getreuer/qmk-keymap/discussions/47
+#define ACHORDION_CHORDING_DISABLED
