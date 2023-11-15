@@ -15,7 +15,7 @@
 // tapping adjustment
 #define TAPPING_TERM 200
 #define PERMISSIVE_HOLD
-// #define TAPPING_TERM_PER_KEY
+#define TAPPING_TERM_PER_KEY
 // #define QUICK_TAP_TERM_PER_KEY
 
 // toggle after one tap, like the default tap/toggle on oryx

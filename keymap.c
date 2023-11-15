@@ -31,13 +31,16 @@ const custom_shift_key_t custom_shift_keys[] = {
 uint8_t NUM_CUSTOM_SHIFT_KEYS =
     sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
 
+#define HOME_PL LGUI_T(KC_A)
+#define HOME_PR RGUI_T(KC_SEMICOLON)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BL] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
     TG(_ML),        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           xxxxxxxx,                xxxxxxxx,       KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_GRAVE,
-    KC_TAB,         KC_A,           LT(_FL, KC_S),  LCTL_T(KC_D),   LALT_T(KC_F),   KC_G,           xxxxxxxx,                xxxxxxxx,       KC_H,           RALT_T(KC_J),   RCTL_T(KC_K),   LT(_FL, KC_L),  KC_SEMICOLON,   KC_RGUI,
+    KC_TAB,         HOME_PL,        LT(_FL, KC_S),  LCTL_T(KC_D),   LALT_T(KC_F),   KC_G,           xxxxxxxx,                xxxxxxxx,       KC_H,           RALT_T(KC_J),   RCTL_T(KC_K),   LT(_FL, KC_L),  HOME_PR,        xxxxxxxx,
     KC_ESCAPE,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                    KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_ENTER,
-    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_LGUI,        KC_LEFT_SHIFT,                  xxxxxxxx,                xxxxxxxx,                       TT(_CL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_LEFT_SHIFT,                  xxxxxxxx,                xxxxxxxx,                       TT(_CL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     KC_BSPC,            KC_NO,KC_NO,   KC_NO,KC_NO,          KC_SPACE
   ),
 
@@ -78,6 +81,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t* record) {
+  switch (keycode) {
+    // Increase the tapping term a little for pinky fingers.
+    case HOME_PL:
+    case HOME_PR:
+      return TAPPING_TERM + 100;
+
+    default:
+      return TAPPING_TERM;
+  }
+}
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #ifdef CONSOLE_ENABLE
     uprintf("KL: kc: 0x%04X, col: %2u, row: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
@@ -107,4 +122,8 @@ void matrix_scan_user(void) {
 bool achordion_eager_mod(uint8_t mod) {
   // disable eager mod
   return false;
+}
+
+uint16_t achordion_timeout(uint16_t tap_hold_keycode) {
+  return 800;  // Use a timeout of 800 ms.
 }
