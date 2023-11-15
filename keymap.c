@@ -18,8 +18,13 @@ enum custom_keycodes {
   M_ECUTE,
   M_EGRAV,
   M_ECIRC,
+  M_ETREMA,
   M_AGRAV,
   M_ACIRC,
+  M_ICIRC,
+  M_ITREMA,
+  M_UCUTE,
+  M_UTREMA,
 
   M_CEDIL,
   M_OE,
@@ -97,9 +102,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_UNICODE] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-    xxxxxxxx,       xxxxxxxx,       M_EGRAV,        M_ECUTE,        M_ECIRC,        xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_OE,           xxxxxxxx,       xxxxxxxx,
-    xxxxxxxx,       M_AGRAV,        M_ACIRC,        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_LAMBDA,       xxxxxxxx,       xxxxxxxx,
-    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_CEDIL,        xxxxxxxx,       xxxxxxxx,                                                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_DOTDOT,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       xxxxxxxx,       M_EGRAV,        M_ECUTE,        M_ECIRC,        xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       M_UCUTE,        M_ICIRC,        M_OE,           xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       M_AGRAV,        M_ACIRC,        M_ETREMA,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       M_UTREMA,       M_ITREMA,       M_LAMBDA,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       M_ACIRC,        xxxxxxxx,       M_CEDIL,        xxxxxxxx,       xxxxxxxx,                                                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_DOTDOT,       xxxxxxxx,       xxxxxxxx,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
   ),
@@ -124,17 +129,23 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (!process_custom_shift_keys(keycode, record)) { return false; }
   if (!process_achordion(keycode, record)) { return false; }
 
-  const bool is_shifted = get_mods() & MOD_MASK_SHIFT;
   if (record->event.pressed) {
+    const bool is_shifted = get_mods() & MOD_MASK_SHIFT;
     switch (keycode) {
     case M_LAMBDA: send_unicode_string(is_shifted ? "Λ" : "λ"); break;
 
     case M_ECUTE:  send_unicode_string(is_shifted ? "É" : "é"); break;
     case M_EGRAV:  send_unicode_string(is_shifted ? "È" : "è"); break;
     case M_ECIRC:  send_unicode_string(is_shifted ? "Ê" : "ê"); break;
+    case M_ETREMA: send_unicode_string(is_shifted ? "Ë" : "ë"); break;
+    case M_ICIRC:  send_unicode_string(is_shifted ? "Î" : "î"); break;
+    case M_ITREMA: send_unicode_string(is_shifted ? "Ï" : "ï"); break;
 
     case M_AGRAV:  send_unicode_string(is_shifted ? "À" : "à"); break;
     case M_ACIRC:  send_unicode_string(is_shifted ? "Â" : "â"); break;
+
+    case M_UCUTE:  send_unicode_string(is_shifted ? "Ù" : "ù"); break;
+    case M_UTREMA: send_unicode_string(is_shifted ? "Ü" : "ü"); break;
 
     case M_CEDIL:  send_unicode_string(is_shifted ? "Ç" : "ç"); break;
     case M_OE:     send_unicode_string(is_shifted ? "Œ" : "œ"); break;
