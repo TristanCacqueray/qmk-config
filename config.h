@@ -13,7 +13,7 @@
 #define NO_MUSIC_MODE
 
 // tapping adjustment
-#define TAPPING_TERM 200
+#define TAPPING_TERM 195
 #define PERMISSIVE_HOLD
 #define TAPPING_TERM_PER_KEY
 // #define QUICK_TAP_TERM_PER_KEY
@@ -30,7 +30,7 @@
 #define KEYBOARD_MOD_PACKET_DELAY 20
 
 // Inspired by https://sunaku.github.io/home-row-mods.html#typing-streaks
-#define ACHORDION_TYPING_STREAK_TIMEOUT 100
+#define ACHORDION_TYPING_STREAK_TIMEOUT 125
 
 // https://github.com/getreuer/qmk-keymap/discussions/47
 #define ACHORDION_CHORDING_DISABLED
