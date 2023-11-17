@@ -164,12 +164,12 @@ bool process_achordion(uint16_t keycode, keyrecord_t* record) {
     // events back into the handling pipeline so that QMK features and other
     // user code can see them. This is done by calling `process_record()`, which
     // in turn calls most handlers including `process_record_user()`.
-    if (!is_streak && (!is_key_event || keycode == KC_LEFT_SHIFT ||
+    if (keycode == TT(2) || (!is_streak && (!is_key_event || keycode == KC_LEFT_SHIFT ||
 #ifndef ACHORDION_CHORDING_DISABLED
                        // Keep hold when tap-hold keys are chorded
                        (is_tap_hold && record->tap.count == 0) ||
 #endif
-        achordion_chord(tap_hold_keycode, &tap_hold_record, keycode, record))) {
+        achordion_chord(tap_hold_keycode, &tap_hold_record, keycode, record)))) {
       dprintln("Achordion: Plumbing hold press.");
       settle_as_hold();
     } else {
