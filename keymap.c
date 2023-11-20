@@ -26,6 +26,7 @@ enum custom_keycodes {
   M_ITREMA,
   M_UCUTE,
   M_UTREMA,
+  M_OCIRC,
 
   M_CEDIL,
   M_OE,
@@ -54,11 +55,18 @@ enum custom_keycodes {
 
 #include "features/custom_shift_keys.h"
 
+#define LHOME_P LT(_EMACS, KC_A)
+#define RHOME_P LT(_EMACS, KC_SEMICOLON)
+#define LHOME_R LT(_FL, KC_S)
+#define RHOME_R LT(_FL, KC_L)
+
 const custom_shift_key_t custom_shift_keys[] = {
   {LCTL_T(KC_D), LSFT(KC_D)}, // Shift d is D
   {LALT_T(KC_F), LSFT(KC_F)}, // Shift f is F
   {RALT_T(KC_J), LSFT(KC_J)}, // Shift j is J
   {RCTL_T(KC_K), LSFT(KC_K)}, // Shift k is K
+  {LHOME_P, LSFT(KC_A)},      // Shift a is A
+  {RHOME_P, LSFT(KC_SEMICOLON)},
   {LT(_FL, KC_S), LSFT(KC_S)},
   {LT(_FL, KC_L), LSFT(KC_L)},
 };
@@ -66,11 +74,6 @@ uint8_t NUM_CUSTOM_SHIFT_KEYS =
     sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
 
 #define RMEH_T(kc) MT(MOD_RCTL | MOD_RSFT | MOD_RALT, kc)
-
-#define LHOME_P LT(_EMACS, KC_A)
-#define RHOME_P LT(_EMACS, KC_SEMICOLON)
-#define LHOME_R LT(_FL, KC_S)
-#define RHOME_R LT(_FL, KC_L)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BL] = LAYOUT_moonlander(
@@ -120,9 +123,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_UNICODE] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-    xxxxxxxx,       xxxxxxxx,       M_EGRAV,        M_ECUTE,        M_ECIRC,        xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       M_UCUTE,        M_ICIRC,        M_OE,           xxxxxxxx,       xxxxxxxx,
-    xxxxxxxx,       M_AGRAV,        M_ACIRC,        M_ETREMA,       xxxxxxxx,       M_EURO,         xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       M_UTREMA,       M_ITREMA,       M_LAMBDA,       xxxxxxxx,       xxxxxxxx,
-    xxxxxxxx,       M_ACIRC,        xxxxxxxx,       M_CEDIL,        xxxxxxxx,       xxxxxxxx,                                                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_DOTDOT,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       xxxxxxxx,       M_EGRAV,        M_ECUTE,        M_ECIRC,        xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       M_UCUTE,        M_ICIRC,        M_OE,           RSFT(KC_ESC),   xxxxxxxx,
+    xxxxxxxx,       M_AGRAV,        M_ACIRC,        M_ETREMA,       xxxxxxxx,       M_EURO,         xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       M_UTREMA,       M_ITREMA,       M_OCIRC,        xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       M_ACIRC,        xxxxxxxx,       M_CEDIL,        xxxxxxxx,       xxxxxxxx,                                                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_DOTDOT,       M_LAMBDA,       xxxxxxxx,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
   ),
@@ -130,7 +133,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_EMACS] = LAYOUT_moonlander(
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_CC_P_F,       M_CC_P_P,       xxxxxxxx,
-    xxxxxxxx,       xxxxxxxx,       M_CX_CS,        xxxxxxxx,       M_CX_CF,        xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+    xxxxxxxx,       RGUI(KC_A),     RGUI(KC_S),     RGUI(KC_D),     RGUI(KC_F),     RGUI(KC_G),     xxxxxxxx,                xxxxxxxx,       LGUI(KC_H),     LGUI(KC_J),     LGUI(KC_K),     LGUI(KC_L),     xxxxxxxx,       xxxxxxxx,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       M_CX_B,                                                  M_CX_0,         M_CX_1,         M_CX_2,         M_CX_3,         xxxxxxxx,       xxxxxxxx,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
@@ -175,6 +178,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case M_UCUTE:  send_unicode_string(is_shifted ? "Ù" : "ù"); break;
     case M_UTREMA: send_unicode_string(is_shifted ? "Ü" : "ü"); break;
+
+    case M_OCIRC:  send_unicode_string(is_shifted ? "Ô" : "ô"); break;
 
     case M_CEDIL:  send_unicode_string(is_shifted ? "Ç" : "ç"); break;
     case M_OE:     send_unicode_string(is_shifted ? "Œ" : "œ"); break;
