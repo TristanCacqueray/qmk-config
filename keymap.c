@@ -230,3 +230,7 @@ bool achordion_eager_mod(uint8_t mod) {
 uint16_t achordion_timeout(uint16_t tap_hold_keycode) {
   return 800;  // Use a timeout of 800 ms.
 }
+
+uint16_t achordion_streak_timeout(uint16_t tap_hold_keycode) {
+  return 150;
+}
