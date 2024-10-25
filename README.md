@@ -1,9 +1,8 @@
 # qmk-config
 
-![cornec](./cornec.png)
+![layers](https://raw.githubusercontent.com/TristanCacqueray/qmk-config/main/moonpointer.svg)
 
-> image generated with http://www.keyboard-layout-editor.com
-
+The config is generated with [gen-zmk](https://github.com/TristanCacqueray/gen-zmk)
 
 ## Changelog
 
@@ -12,14 +11,10 @@
 - Replaced combos to use proper home-row-mods thanks to [achordion](https://getreuer.info/posts/keyboards/achordion/).
 
 
-## Built
+## Build
 
 Run the following commands to build the firmware:
 
 ```
-nix develop --command qmk setup
-ln -s $(pwd) ~/qmk_firmware/keyboards/moonlander/keymaps/moonwalker
 nix run
 ```
-
-Don't forget to apply https://github.com/qmk/qmk_firmware/pull/19405 to ~/qmk_firmware.

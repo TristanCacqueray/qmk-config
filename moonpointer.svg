@@ -1,0 +1,1361 @@
+<svg width="1252px" height="1740px" viewBox="0 0 1252 1740" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+ <rect style="fill:#fff;stroke:#c3c3c3" width="1252" height="1739" x="0" y="0"></rect><text style="font-size:23px;font-family:'monospace'" dominant-baseline="central" text-anchor="end" x="626" y="20">
+ MoonPointer
+</text><text style="font-size:23px;font-family:'monospace'" dominant-baseline="central" text-anchor="start" x="611" y="20">
+ TristanCacqueray/qmk-config
+</text><text style="font-size:24px;font-family:'monospace';fill:#000" dominant-baseline="central" text-anchor="middle" x="150" y="272">
+ base
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#6b2228" dominant-baseline="central" text-anchor="middle" x="52" y="81">
+ 👉 MICE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="81">
+ Q
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="81">
+ W
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="81">
+ E
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="81">
+ R
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="81">
+ T
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="81">
+ Y
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="81">
+ U
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="81">
+ I
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="81">
+ O
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1092" y="81">
+ P
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="48"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="middle" x="1195" y="81">
+ 🤏 FRENCH
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="52" y="144">
+ TAB
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="144">
+ A
+</text><text style="font-size:10px;font-family:'monospace';fill:#5e1e2d" dominant-baseline="central" text-anchor="middle" x="155" y="156">
+ WM
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="144">
+ S
+</text><text style="font-size:10px;font-family:'monospace';fill:#7e301e" dominant-baseline="central" text-anchor="middle" x="258" y="156">
+ NUM
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="144">
+ D
+</text><text style="font-size:10px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="156">
+ CTRL
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="144">
+ F
+</text><text style="font-size:10px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="156">
+ ALT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="144">
+ G
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="144">
+ H
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="144">
+ J
+</text><text style="font-size:10px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="156">
+ ALT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="144">
+ K
+</text><text style="font-size:10px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="156">
+ CTRL
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="144">
+ L
+</text><text style="font-size:10px;font-family:'monospace';fill:#7e301e" dominant-baseline="central" text-anchor="middle" x="989" y="156">
+ NUM
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1092" y="144">
+ ; :
+</text><text style="font-size:10px;font-family:'monospace';fill:#5e1e2d" dominant-baseline="central" text-anchor="middle" x="1092" y="156">
+ WM
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="111"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="middle" x="1195" y="144">
+ 🤏 GREEK
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="52" y="207">
+ ESC
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="207">
+ Z
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="207">
+ X
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="207">
+ C
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="207">
+ V
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="207">
+ B
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="207">
+ N
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="207">
+ M
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="207">
+ , &lt;
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="207">
+ . &gt;
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1092" y="207">
+ / ?
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="174"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1195" y="207">
+ RET
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="237"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="270">
+ META
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="237"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="270">
+ ALT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="237"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="270">
+ BSPC
+</text><text style="font-size:10px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="282">
+ SHIFT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="237"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="270">
+ SPACE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="237"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="middle" x="783" y="270">
+ 👇 FN
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="237"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#7e301e" dominant-baseline="central" text-anchor="middle" x="886" y="270">
+ 👇 NUM
+</text><text style="font-size:24px;font-family:'monospace';fill:#7e301e" dominant-baseline="central" text-anchor="middle" x="150" y="554">
+ num
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="330"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="363">
+ F20
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="363">
+ F21
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="363">
+ UP
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="363">
+ F22
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="363">
+ F23
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="363">
+ 🖟 MIDDLE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="363">
+ 7
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="363">
+ 8
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="363">
+ 9
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="330"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1092" y="363">
+ *
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="330"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="393"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="426">
+ F18
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="426">
+ LEFT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="426">
+ DOWN
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="426">
+ RIGHT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="426">
+ F19
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="426">
+ ⇞
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="426">
+ 4
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="426">
+ 5
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="426">
+ 6
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="393"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1092" y="426">
+ :=
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="393"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="456"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="489">
+ F13
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="489">
+ F14
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="489">
+ F15
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="489">
+ F16
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="489">
+ F17
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="489">
+ ⇟
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="489">
+ 1
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="489">
+ 2
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="489">
+ 3
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1092" y="489">
+ \
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="456"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1195" y="489">
+ RET
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="519"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="552">
+ 👉 BASE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="519"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="552">
+ 👉 BASE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="519"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="552">
+ 👉 BASE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="519"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="519"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="552">
+ 0
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="519"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="552">
+ . &gt;
+</text><text style="font-size:20px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="star" x="180" y="544">
+ fn
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="101" y="350">
+ 👉 BASE
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="204" y="350">
+ INS
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="307" y="350">
+ HOME
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="410" y="350">
+ UP
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="513" y="350">
+ END
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="616" y="350">
+ ⇞
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="832" y="350">
+ F7
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="935" y="350">
+ F8
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="1038" y="350">
+ F9
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="1141" y="350">
+ F10
+</text>
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="204" y="413">
+ DEL
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="307" y="413">
+ LEFT
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="410" y="413">
+ DOWN
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="513" y="413">
+ RIGHT
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="616" y="413">
+ ⇟
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="729" y="413">
+ ⇞
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="832" y="413">
+ F4
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="935" y="413">
+ F5
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="1038" y="413">
+ F6
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="1141" y="413">
+ F11
+</text>
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="204" y="476">
+ 🔉 DN
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="307" y="476">
+ 🔉 UP
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="410" y="476">
+ 🔅
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="513" y="476">
+ 🔆
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="729" y="476">
+ ⇟
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="832" y="476">
+ F1
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="935" y="476">
+ F2
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="1038" y="476">
+ F3
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="1141" y="476">
+ F12
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="410" y="539">
+ 👉 BASE
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="513" y="539">
+ 👉 BASE
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="616" y="539">
+ 👉 BASE
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="832" y="539">
+ 👉 BASE
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="end" x="935" y="539">
+ PRINT-SCREEN
+</text><text style="font-size:20px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="star" x="180" y="262">
+ french
+</text>
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="307" y="68">
+ è
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="410" y="68">
+ é
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="513" y="68">
+ ê
+</text>
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="832" y="68">
+ ù
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="935" y="68">
+ î
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="1038" y="68">
+ œ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="1141" y="68">
+ 🎤 push
+</text>
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="204" y="131">
+ à
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="307" y="131">
+ â
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="410" y="131">
+ ë
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="616" y="131">
+ €
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="832" y="131">
+ ü
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="935" y="131">
+ ï
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="1038" y="131">
+ ô
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="1141" y="131">
+ …
+</text>
+    
+    
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="410" y="194">
+ ç
+</text>
+    
+    
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="935" y="194">
+ «
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="1038" y="194">
+ »
+</text>
+    
+    
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="616" y="257">
+ SHIFT
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="end" x="832" y="257">
+ 👉 BASE
+</text>
+    <text style="font-size:20px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="end" x="120" y="262">
+ greek
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="104" y="68">
+ ω
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="207" y="68">
+ η
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="310" y="68">
+ ϵ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="413" y="68">
+ ρ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="516" y="68">
+ τ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="629" y="68">
+ γ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="732" y="68">
+ υ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="835" y="68">
+ ι
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="938" y="68">
+ ο
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="1041" y="68">
+ π
+</text>
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="104" y="131">
+ α
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="207" y="131">
+ σ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="310" y="131">
+ δ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="413" y="131">
+ φ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="516" y="131">
+ θ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="629" y="131">
+ χ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="732" y="131">
+ ×
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="835" y="131">
+ κ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="938" y="131">
+ λ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="1041" y="131">
+ ψ
+</text>
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="104" y="194">
+ ζ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="207" y="194">
+ ξ
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="413" y="194">
+ ω
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="516" y="194">
+ β
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="629" y="194">
+ ν
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="732" y="194">
+ μ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="835" y="194">
+ N
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="938" y="194">
+ ℝ
+</text>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="1041" y="194">
+ ⊕
+</text>
+    
+    
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="516" y="257">
+ SHIFT
+</text>
+    
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="start" x="732" y="257">
+ 👉 BASE
+</text>
+    <text style="font-size:24px;font-family:'monospace';fill:#5e1e2d" dominant-baseline="central" text-anchor="middle" x="150" y="836">
+ wm
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="612"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="612"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="612">
+ <title>C-x t O</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="260" y="642">
+ ← tab
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="612"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="645">
+ C-UP
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="612">
+ <title>C-x t o</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="466" y="642">
+ → tab
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="612">
+ <title>C-x t 2</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="569" y="642">
+ new tab
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="612">
+ <title>(gui v)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="682" y="642">
+ 🚀 gmrun
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="612">
+ <title>(gui J)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="785" y="642">
+ 💻 7
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="612">
+ <title>(gui K)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="888" y="642">
+ 💻 8
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="612">
+ <title>(gui L)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="991" y="642">
+ 💻 9
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="612">
+ <title>C-x p p</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1094" y="642">
+ 📂 project
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="612"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="675">
+ <title>(gui tab)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="54" y="705">
+ ⇄ win
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="675"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="675"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="708">
+ C-LEFT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="675"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="708">
+ C-DOWN
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="675"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="708">
+ C-RIGHT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="675">
+ <title>C-x t RET</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="569" y="705">
+ ⇄ tab
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="675">
+ <title>(gui ret)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="682" y="705">
+ 🚀 terminal
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="675">
+ <title>(gui F)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="785" y="705">
+ 💻 code
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="675">
+ <title>(gui G)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="888" y="705">
+ 💻 comm
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="675">
+ <title>(gui H)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="991" y="705">
+ 💻 web
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="675">
+ <title>C-x p f</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1094" y="705">
+ 📂 proj-file
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="675"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="738"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="738"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="738">
+ <title>(gui A)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="260" y="768">
+ 💻 1
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="738">
+ <title>(gui S)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="363" y="768">
+ 💻 2
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="738">
+ <title>(gui D)</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="466" y="768">
+ 💻 3
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="738">
+ <title>C-x b</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="569" y="768">
+ ⇄ buffer
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="738">
+ <title>C-c &lt;left&gt;</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="682" y="768">
+ win-undo
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="738">
+ <title>C-x 1</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="785" y="768">
+ ⌧ other-win
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="738">
+ <title>C-x 2</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="888" y="768">
+ ✂ horiz
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="738">
+ <title>C-x 3</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="991" y="768">
+ ✂ vert
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="738">
+ <title>C-c &lt;right&gt;</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1094" y="768">
+ win-redo
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="738"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="801"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="801">
+ <title>C-x t 0</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="466" y="831">
+ ⌧ tab
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="801"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="801"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="834">
+ C-SPC
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="801">
+ <title>C-x 0</title>
+</rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="785" y="831">
+ ⌧ win
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="801"></rect>
+    <text style="font-size:24px;font-family:'monospace';fill:#6b2228" dominant-baseline="central" text-anchor="middle" x="150" y="1118">
+ mice
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="894"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="52" y="927">
+ 👉 BASE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="894"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="894"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="927">
+ M-LEFT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="894"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="927">
+ UP
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="894"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="927">
+ M-RIGHT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="894"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="894"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="927">
+ scroll-up
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="894"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="927">
+ 🖟 RIGHT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="894"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="927">
+ 🖟 MIDDLE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="894"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="894"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="894"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="957"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#84391c" dominant-baseline="central" text-anchor="middle" x="52" y="990">
+ 👉 SYS
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="957"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="957"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="990">
+ LEFT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="957"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="990">
+ DOWN
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="957"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="990">
+ RIGHT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="957"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="990">
+ ⇞
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="957"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="990">
+ scroll-dn
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="957"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="990">
+ scroll-left
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="957"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="990">
+ scroll-right
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="957"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="957"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="957"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="1020"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#000" dominant-baseline="central" text-anchor="middle" x="52" y="1053">
+ 👉 QWERTY
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="1020"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="1020"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1020"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="1053">
+ CTRL
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1020"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="1053">
+ ALT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1020"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="1053">
+ ⇟
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1020"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1020"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1020"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="1020"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="1020"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="1020"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1195" y="1053">
+ RET
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1083"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="1116">
+ META
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1083"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1083"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="1116">
+ SHIFT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1083"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="1116">
+ 🖟 LEFT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1083"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="1116">
+ 👉 BASE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1083"></rect>
+    <text style="font-size:24px;font-family:'monospace';fill:#84391c" dominant-baseline="central" text-anchor="middle" x="150" y="1400">
+ sys
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="1176"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="52" y="1209">
+ 👉 BASE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="1176"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="1209">
+ out-toggle
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="1176"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="1239"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="52" y="1272">
+ 👉 BASE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="1239"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="1239"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1239"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1239"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1239"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1239"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1239"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="1272">
+ bt-4
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1239"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="1272">
+ bt-5
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="1239"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="1239"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="1239"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="1302"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="1302"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="1302"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1302"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1302"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1302"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="1335">
+ bt-clear
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1302"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1302"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="1335">
+ bt-1
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1302"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="1335">
+ bt-2
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="1302"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="1335">
+ bt-3
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="1302"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="1302"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1365"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1365"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1365"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1365"></rect>
+    
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1365"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="1398">
+ 👉 BASE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1365"></rect>
+    <text style="font-size:24px;font-family:'monospace';fill:#000" dominant-baseline="central" text-anchor="middle" x="150" y="1682">
+ qwerty
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="52" y="1491">
+ 👉 BASE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="1491">
+ Q
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="1491">
+ W
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="1491">
+ E
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="1491">
+ R
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="1491">
+ T
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="1491">
+ Y
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="1491">
+ U
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="1491">
+ I
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="1491">
+ O
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1092" y="1491">
+ P
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="1458"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#5da655" dominant-baseline="central" text-anchor="middle" x="1195" y="1491">
+ 🤏 FRENCH
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="52" y="1554">
+ TAB
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="1554">
+ A
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="1554">
+ S
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="1554">
+ D
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="1554">
+ F
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="1554">
+ G
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="1554">
+ H
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="1554">
+ J
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="1554">
+ K
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="1554">
+ L
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1092" y="1554">
+ ; :
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="1521"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#7a7026" dominant-baseline="central" text-anchor="middle" x="1195" y="1554">
+ 🤏 GREEK
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="4" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="52" y="1617">
+ ESC
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="107" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="155" y="1617">
+ Z
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="210" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="258" y="1617">
+ X
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="1617">
+ C
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="1617">
+ V
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="1617">
+ B
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="1617">
+ N
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="783" y="1617">
+ M
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="886" y="1617">
+ , &lt;
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="941" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="989" y="1617">
+ . &gt;
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1044" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1092" y="1617">
+ / ?
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="1147" y="1584"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1195" y="1617">
+ RET
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="313" y="1647"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="361" y="1680">
+ CTRL
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="416" y="1647"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="464" y="1680">
+ ALT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="519" y="1647"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="1680">
+ BSPC
+</text><text style="font-size:10px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="567" y="1692">
+ SHIFT
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="632" y="1647"></rect>
+    <text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="680" y="1680">
+ SPACE
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="735" y="1647"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#85521c" dominant-baseline="central" text-anchor="middle" x="783" y="1680">
+ 👇 FN
+</text>
+<rect style="fill:#f8f8f8;stroke:#c3c3c3" width="100" height="60" x="838" y="1647"></rect>
+    <text style="font-size:12px;font-family:'monospace';fill:#7e301e" dominant-baseline="central" text-anchor="middle" x="886" y="1680">
+ 👇 NUM
+</text><rect style="fill:#eee" width="18" height="18" x="724" y="132"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="730" y="141">
+ =
+</text>
+<rect style="fill:#eee" width="18" height="18" x="1033" y="132"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="1039" y="141">
+ |
+</text>
+<rect style="fill:#eee" width="18" height="18" x="251" y="100"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="257" y="109">
+ !
+</text>
+<rect style="fill:#eee" width="18" height="18" x="302" y="69"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="308" y="78">
+ @
+</text>
+<rect style="fill:#eee" width="18" height="18" x="302" y="132"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="308" y="141">
+ (
+</text>
+<rect style="fill:#eee" width="18" height="18" x="405" y="132"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="411" y="141">
+ )
+</text>
+<rect style="fill:#eee" width="18" height="18" x="199" y="132"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="205" y="141">
+ [
+</text>
+<rect style="fill:#eee" width="18" height="18" x="508" y="132"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="514" y="141">
+ ]
+</text>
+<rect style="fill:#eee" width="18" height="18" x="405" y="69"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="411" y="78">
+ {
+</text>
+<rect style="fill:#eee" width="18" height="18" x="508" y="69"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="514" y="78">
+ }
+</text>
+<rect style="fill:#eee" width="18" height="18" x="827" y="69"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="833" y="78">
+ ~
+</text>
+<rect style="fill:#eee" width="18" height="18" x="930" y="69"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="936" y="78">
+ %
+</text>
+<rect style="fill:#eee" width="18" height="18" x="827" y="132"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="833" y="141">
+ *
+</text>
+<rect style="fill:#eee" width="18" height="18" x="930" y="132"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="936" y="141">
+ +
+</text>
+<rect style="fill:#eee" width="18" height="18" x="982" y="100"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="988" y="109">
+ ^
+</text><rect style="fill:#eee" width="18" height="18" x="354" y="100"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="360" y="109">
+ -
+</text>
+<rect style="fill:#eee" width="18" height="18" x="457" y="100"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="463" y="109">
+ _
+</text>
+<rect style="fill:#eee" width="18" height="18" x="457" y="163"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="463" y="172">
+ &amp;
+</text>
+<rect style="fill:#eee" width="18" height="18" x="354" y="163"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="360" y="172">
+ #
+</text>
+<rect style="fill:#eee" width="18" height="18" x="560" y="163"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="566" y="172">
+ $
+</text>
+<rect style="fill:#eee" width="18" height="18" x="776" y="163"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="782" y="172">
+ `
+</text>
+<rect style="fill:#eee" width="18" height="18" x="879" y="163"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="885" y="172">
+ \
+</text>
+<rect style="fill:#eee" width="18" height="18" x="879" y="100"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="885" y="109">
+ '
+</text>
+<rect style="fill:#eee" width="18" height="18" x="776" y="100"></rect>
+<text style="font-size:12px;font-family:'monospace'" dominant-baseline="central" text-anchor="middle" x="782" y="109">
+ "
+</text>
+</svg>
