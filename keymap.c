@@ -77,12 +77,12 @@ uint8_t NUM_CUSTOM_SHIFT_KEYS =
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BL] = LAYOUT_moonlander(
-    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,                xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-    TG(_ML),        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           xxxxxxxx,                xxxxxxxx,       KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           OSL(_UNICODE),
-    KC_TAB,         LHOME_P,        LHOME_R,        LCTL_T(KC_D),   LALT_T(KC_F),   KC_G,           xxxxxxxx,                xxxxxxxx,       KC_H,           RALT_T(KC_J),   RCTL_T(KC_K),   RHOME_R,        RHOME_P,        KC_GRAVE,
+    xxxxxxxx,       KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_6,                    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+    TG(_ML),        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_7,                    xxxxxxxx,       KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           OSL(_UNICODE),
+    KC_TAB,         KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_8,                    xxxxxxxx,       KC_H,           RALT_T(KC_J),   RCTL_T(KC_K),   RHOME_R,        RHOME_P,        KC_GRAVE,
     KC_ESCAPE,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                    KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_ENTER,
-    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_LGUI,        KC_BSPC,                        xxxxxxxx,                xxxxxxxx,                       TT(_CL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
-                                                                                    KC_LEFT_SHIFT,     KC_NO,KC_NO,   KC_NO,KC_NO,          KC_SPACE
+    KC_LCTL,        KC_LALT,        xxxxxxxx,       KC_LGUI,        KC_BSPC,                        xxxxxxxx,                xxxxxxxx,                       TT(_CL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+                                                                                    KC_LEFT_SHIFT,     KC_LCTL,KC_NO,   KC_NO,KC_NO,          KC_SPACE
   ),
 
   [_FL] = LAYOUT_moonlander(
@@ -108,7 +108,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TO(_BL),        DB_TOGG,        KC_MS_BTN1,     KC_MS_UP,       KC_MS_BTN2,     KC_MS_WH_UP,    xxxxxxxx,                xxxxxxxx,       KC_MS_WH_UP,    KC_MS_BTN1,     KC_MS_UP,       KC_MS_BTN2,     xxxxxxxx,       xxxxxxxx,
     TO(_SETTINGS),  xxxxxxxx,       KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_MS_WH_DOWN,  xxxxxxxx,                xxxxxxxx,       KC_MS_WH_DOWN,  KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    xxxxxxxx,       xxxxxxxx,
     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_MS_BTN3,                                              KC_MS_BTN3,     xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       KC_ENTER,
-    xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
+    QK_BOOT,       xxxxxxxx,       xxxxxxxx,       _______,        _______,                        xxxxxxxx,                xxxxxxxx,                       TO(_BL),        xxxxxxxx,       xxxxxxxx,       xxxxxxxx,       xxxxxxxx,
                                                                                     _______,            KC_NO,KC_NO,   KC_NO,KC_NO,          _______
   ),
 
