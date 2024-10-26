@@ -2,6 +2,21 @@
 
 #pragma once
 
+enum layer {
+ _layer_base, _layer_num, _layer_fn, _layer_french, _layer_greek, _layer_wm, _layer_mice, _layer_sys, _layer_qwerty
+};
+
+#define LAYER_HANDLERS \
+  case _layer_base: oled_write_P(PSTR("base\n"), false); break; \
+  case _layer_num: oled_write_P(PSTR("num\n"), false); break; \
+  case _layer_fn: oled_write_P(PSTR("fn\n"), false); break; \
+  case _layer_french: oled_write_P(PSTR("french\n"), false); break; \
+  case _layer_greek: oled_write_P(PSTR("greek\n"), false); break; \
+  case _layer_wm: oled_write_P(PSTR("wm\n"), false); break; \
+  case _layer_mice: oled_write_P(PSTR("mice\n"), false); break; \
+  case _layer_sys: oled_write_P(PSTR("sys\n"), false); break; \
+  case _layer_qwerty: oled_write_P(PSTR("qwerty\n"), false); break;
+
 enum custom_keycodes {
   M_432d782074204f = SAFE_RANGE,
   M_432d782074206f,
@@ -182,10 +197,6 @@ uint16_t get_combo_term(uint16_t index, combo_t *combo) {
   if (index < 24) return 18;
   return 40;
 }
-
-enum layer {
- _layer_base, _layer_num, _layer_fn, _layer_french, _layer_greek, _layer_wm, _layer_mice, _layer_sys, _layer_qwerty
-};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_layer_base] = LAYOUT_split_3x6_3(

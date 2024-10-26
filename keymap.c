@@ -45,3 +45,19 @@ uint16_t achordion_timeout(uint16_t tap_hold_keycode) {
 uint16_t achordion_streak_timeout(uint16_t tap_hold_keycode) {
   return 150;
 }
+
+#ifdef OLED_ENABLE
+bool oled_task_user(void) {
+    switch (get_highest_layer(layer_state)) {
+        LAYER_HANDLERS
+        default:
+            oled_write_ln_P(PSTR("Undefined\n"), false);
+    }
+
+    return false;
+}
+
+oled_rotation_t oled_init_user(oled_rotation_t rotation) {
+    return OLED_ROTATION_270;
+}
+#endif
