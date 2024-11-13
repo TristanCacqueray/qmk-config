@@ -5,10 +5,27 @@
 #include "version.h"
 #include "keymap_us_international.h"
 #include "features/achordion.h"
+#include "features/custom_shift_keys.h"
 
 #include "gen_qmk.h"
 
+
+const custom_shift_key_t custom_shift_keys[] = {
+  {LCTL_T(KC_D), LSFT(KC_D)}, // Shift d is D
+  {LALT_T(KC_F), LSFT(KC_F)}, // Shift f is F
+  {RALT_T(KC_J), LSFT(KC_J)}, // Shift j is J
+  {RCTL_T(KC_K), LSFT(KC_K)}, // Shift k is K
+  {LT(_layer_wm, KC_A), LSFT(KC_A)},      // Shift a is A
+  {LT(_layer_wm, KC_SEMICOLON), LSFT(KC_SEMICOLON)},
+  {LT(_layer_num, KC_S), LSFT(KC_S)},
+  {LT(_layer_num, KC_L), LSFT(KC_L)},
+};
+uint8_t NUM_CUSTOM_SHIFT_KEYS =
+    sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
+
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  if (!process_custom_shift_keys(keycode, record)) { return false; }
   if (!process_achordion(keycode, record)) { return false; }
 
   if (record->event.pressed) {

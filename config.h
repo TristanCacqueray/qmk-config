@@ -52,6 +52,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // TODO: render that automatically
 #define COMBO_ONLY_FROM_LAYER 8
 
+// tapping adjustment
+#define TAPPING_TERM 195
+#define PERMISSIVE_HOLD
+// #define TAPPING_TERM_PER_KEY
+// #define QUICK_TAP_TERM_PER_KEY
+
+// toggle after one tap, like the default tap/toggle on oryx
+#define TAPPING_TOGGLE 1
+
+// Unfortunately, some applications drop or misorder fast key events. This is a
+// partial fix to slow down the rate at which macros are sent.
+#define TAP_CODE_DELAY 12
+
+// Inspired by https://sunaku.github.io/home-row-mods.html#typing-streaks
+#define ACHORDION_STREAK
+
+// https://github.com/getreuer/qmk-keymap/discussions/47
+#define ACHORDION_CHORDING_DISABLED
+
 #define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
 
 #undef MANUFACTURER
