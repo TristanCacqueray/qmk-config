@@ -8,6 +8,10 @@
 
 #include "gen_qmk.h"
 
+void pointing_device_init_user(void) {
+    set_auto_mouse_layer(_layer_mice);
+    set_auto_mouse_enable(true);
+}
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (!process_achordion(keycode, record)) { return false; }

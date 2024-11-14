@@ -52,6 +52,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // TODO: render that automatically
 #define COMBO_ONLY_FROM_LAYER 8
 
+// https://docs.qmk.fm/features/pointing_device#how-to-customize
+#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+
 // tapping adjustment
 #define TAPPING_TERM 195
 #define PERMISSIVE_HOLD
